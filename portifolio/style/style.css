@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#menu {
+    width: 100%;
+    height: 7rem;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto 17rem ;
+    width: 25rem;
+    height: 2rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph_items {
+    font-size: 1.3rem;
+
+    color: #004677;
+}
+
+.main_container {
+    display: flex;
+
+    width: 100%;
+}
+
+.title {
+    color: #004677;
+}
+
+.title_main {
+    font-size: 3rem;
+
+    margin: 1rem auto 5rem 7rem;
+}
+
+.about_portifolio {
+    width: 50%;
+
+    margin: 7rem 2rem auto 20rem;
+}
+
+.projects {
+    width: 50%;
+}
+
+.title_secondary {
+    font-size: 1.6rem;
+}
+
+.paragraph_main {
+    font-size: 1.2rem;
+}
+
+.projects_container {
+    width: 100%;
+    height: 35rem;
+
+    display: flex;
+
+    overflow: auto;
+}
+
+/* .projects_container::-webkit-scrollbar-track {
+    width: 3rem;
+    background: #6bb4e7;
+
+}
+
+.projects_container::-webkit-scrollbar-thumb {
+    background: #004677;
+    width: 18px;
+    border: solid 4px;
+} */
+
+.projects_img {
+    width: 25rem;
+    height: auto;
+    margin: 1rem;
+}
