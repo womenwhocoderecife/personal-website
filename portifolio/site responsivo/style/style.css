@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#menu {
+    width: 100%;
+    height: 7rem;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto 17rem ;
+    width: 25rem;
+    height: 2rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph_items {
+    font-size: 1.3rem;
+
+    color: #004677;
+}
+
+.main_container {
+    display: flex;
+
+    width: 100%;
+}
+
+.title {
+    color: #004677;
+}
+
+.title_main {
+    font-size: 3rem;
+
+    margin: 1rem auto 5rem 7rem;
+}
+
+.about_portifolio {
+    width: 50%;
+
+    margin: 7rem 2rem auto 20rem;
+}
+
+.projects {
+    width: 50%;
+}
+
+.title_secondary {
+    font-size: 1.6rem;
+}
+
+.paragraph_main {
+    font-size: 1.2rem;
+}
+
+.projects_container {
+    width: 100%;
+    height: 35rem;
+
+    display: flex;
+
+    overflow: auto;
+}
+
+.projects_container.scroll::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    
+    }
+     
+
+.projects_container::-webkit-scrollbar-track {
+    background-color:  #f81818
+    }
+     
+.projects::-webkit-scrollbar-thumb {
+    background: #2e9dd8;
+    }
+
+.projects_img {
+    width: 25rem;
+    height: auto;
+    margin: 1rem;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .menu_container {
+        margin: auto ;
+    }
+
+    .main_container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .title_main {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .portifolio_container{
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .title_secondary{
+        padding-bottom: 1rem;
+    }
+
+    
+
+    .paragraph_main{
+        text-align: justify;
+        padding-bottom: 1rem;
+    }
+
+    .about_portifolio {
+        width: 80%;
+        margin: auto;
+    }
+
+    .projects {
+        width: 90%;
+        margin-left: 5.4rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .projects {
+        width: 90%;
+        margin-left: 4rem;
+    }
+  
+
+    .title_main {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        margin-left: 4.8rem;
+    }
+    .projects_container {
+        height: 30rem;
+    }
+
+    projects_img {
+        width: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+    .menu_container {
+        margin: auto;
+        width: 20rem;
+    }
+
+    .paragraph_items {
+        font-size: 1rem;
+    }
+
+    .title_main {
+        margin: 1rem auto 2rem auto;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .projects {
+        width: 100%;
+        margin-left: 1.6rem;
+    }
+  
+
+    .projects_container {
+        height: 20rem;
+    }
+
+    .projects_img {
+        width: 15rem;
+    }
+
+}
