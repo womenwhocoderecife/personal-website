@@ -4,43 +4,50 @@
 }
 body {
 	font-family: 'Open Sans;', sans-serif;
-	color: #333333;
+	color: var(--color-text);
 	margin: 0;
 	height: 100vh;
 }
+
+/*Usando CSS Variables*/ 
+
+:root{
+	--color-blue:#004677;
+	--color-text: #333333;
+	--color-white:#fff;	
+}
+
 ul {
   padding: 0;
   list-style: none;
 }
 h2,
 a {
-	color: #004677;
+	color: var(	--color-blue);
 }
 a {
 	text-decoration: none;
 }
 img {
 	max-width: 90%;
-	box-shadow: #333333;
+	box-shadow: var(--color-text);
 }
 /* ---- Navigation ---- */
 .main-header {
-	padding: 1em 1em;
+	padding: 1rem 1rem;
 	justify-content: flex-end;
 }
 .main-nav {
-	margin-top: 20px;
+	margin-top: 1.25rem;
 	
 }
 .main-nav a {
-	/* text-align: center; */
-	/* display: block; */
 	padding: 10px 30px;	
 }
 /* ---- Layout Containers ---- */
 .primary {
-	padding-right: 3em;
-	padding-left: 3em;
+	padding-right: 3rem;
+	padding-left: 3rem;
 	min-height: 85vh;
 	display: flex;	
 }
@@ -55,28 +62,36 @@ img {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 50px;
-	margin-top: 150px;
+	margin-top: 9.375rem;
 }
 .secondary > p{
 	text-align: justify;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
-	line-height: 30px;
+	font-size:   1rem;
+	line-height: 1.875rem;
 	font-weight: 100;
-	color: #333333;
-	margin-bottom: 80px;
-	max-width: 500px;
+	color: var(--color-text);
+	margin-bottom: 5rem;
+	max-width: 31.25rem;
 }
 /* ================================= 
   Sobre
 ==================================== */
+
+
+
 /* ================================= 
   Portfolio
 ==================================== */
+
+
+
 /* ================================= 
   Media Queries - Index
 ==================================== */
+
+
 @media (min-width: 769px) {
 	.main-header,
 	.main-nav,
@@ -93,17 +108,17 @@ img {
 }
 @media (max-width: 769px){
 	.main-header{
-		background: #004677;	
+		background: var(--color-blue);	
 	}
     .main-nav li a{
 		text-align: center;
 		display: block;
 	}
 	.main-header .main-nav > li a{
-		color: #fff;
+		color: var(--color-white);
 	}
 	.secondary{
-		max-width: 350px;
+		max-width: 21.875rem;
 		margin: 0 auto;
 	}
 	.social_media_link{
