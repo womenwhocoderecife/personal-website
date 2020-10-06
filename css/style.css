@@ -2,19 +2,16 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
 	font-family: 'Open Sans;', sans-serif;
 	color: #333333;
 	margin: 0;
 	height: 100vh;
 }
-
 ul {
   padding: 0;
   list-style: none;
 }
-
 h2,
 a {
 	color: #004677;
@@ -22,7 +19,6 @@ a {
 a {
 	text-decoration: none;
 }
-
 img {
 	max-width: 90%;
 	box-shadow: #333333;
@@ -48,25 +44,19 @@ img {
 	min-height: 85vh;
 	display: flex;	
 }
-
 .primary .item{
 	margin: auto;
 }
-
  .secondary{
 	display:flex;
 	flex-direction: column;	
 }
-
-
 .secondary > h2{
 	font-style: normal;
 	font-weight: 500;
 	font-size: 50px;
 	margin-top: 150px;
-
 }
-
 .secondary > p{
 	text-align: justify;
 	font-style: normal;
@@ -78,277 +68,15 @@ img {
 	margin-bottom: 80px;
 	max-width: 500px;
 }
-
-
 /* ================================= 
   Sobre
 ==================================== */
-
-
-
 /* ================================= 
   Portfolio
-
-  /* Menu Navegation*/
-
-.main-header {
-	padding: 1em 1em;
-	margin-right: 18.9rem;
-	justify-content: flex-end;
-}
-.main-nav {
-	margin-top: 20px;
-}
-.main-nav a {
-	/* text-align: center; */
-	/* display: block; */
-	padding: 10px 30px;	
-}
-
-/* Main */
-
-.title {
-	color: #004677;
-}
-
-.title_main {
-	font-size: 2.5rem;
-
-    margin-top: 2rem;
-	margin-left: 7.6rem;
-	margin-bottom: 11rem;
-}
-
-.main_container {
-	display: flex;
-	
-	width: 100%;
-}
-
-.portfolio_container{
-	margin-left: 1.8rem;
-}
-
-.about_portfolio {	
-    margin: 0 1.9rem auto 19rem;
-}
-
-.projects {
-	width: auto;
-}
-
-.title_secondary {
-	font-size: 1.2rem;
-	line-height: 3rem;
-	
-	margin-top: 0;
-	margin-bottom: 1.2rem;
-}
-
-.paragraph_main {
-	font-size: 0.8rem;
-	line-height: 1.3rem;
-	margin: 0;
-	width: 16.4rem;
-}
-
-.projects_container {
-    width: 100%;
-    height: 26rem;
-
-    display: flex;
-
-    overflow: auto;
-}
-
-.projects_container::-webkit-scrollbar{
-	width: 4px;
-}
-
-.projects_container::-webkit-scrollbar-track {
-    background: #6bb4e7;
-
-}
-
-.projects_container::-webkit-scrollbar-thumb {
-    background: #004677;
-    border: solid 4px #004677;
-}
-
-.projects_img {
-    width: 31.5rem;
-	height: 23.6rem;
-	margin: 0 1.9rem;
-	border: solid 1px #004677;
-}
-
-/* Medias Queries do portifolio ------------------------------------- */
-
-@media screen and (max-width: 1024px){
-
-    .main-header {
-		margin-right: 9rem;
-
-	}
-
-    .title_main {
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-	}
-	
-	.about_portfolio {	
-		margin: 0 1.9rem auto 16rem;
-	}
-
-	.paragraph_main {
-		font-size: 0.8rem;
-		line-height: 1.3rem;
-		margin: 0;
-		width: 18rem;
-	}
-
-    .portfolio_container{
-
-        text-align: center;
-
-        justify-content: center;
-    }
-
-    .title_secondary{
-		margin-bottom: 1rem;
-        text-align: left;
-    }
-
-    
-
-    .paragraph_main{
-        text-align: justify;
-        padding-bottom: 1rem;
-	}
-	
-	.projects_container {
-		height: 21rem;
-
-	}
-
-	.projects_img {
-		width: 31.5rem;
-		height: 18rem;
-
-	}
-
-}
-
-@media screen and (max-width: 768px){
-
-	.main-header {
-		width: 100%;
-	}
-
-	.main_container{
-		flex-direction: column;
-	}
-	
-    .title_main {
-		margin: 4rem 0 2rem 0;
-		text-align: center;
-	}
-	
-	.about_portfolio {	
-		margin: auto;
-		margin-bottom: 2.6rem;
-	}
-
-    .portfolio_container{
-        text-align: center;
-		justify-content: center;
-		margin: 0;
-    }
-
-    .title_secondary{
-		margin-top: 0;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-
-	.paragraph_main{
-		width: 25rem;
-		text-align: justify;
-		font-size: 1rem;
-	}
-
-	
-	.projects_container {
-		height: 21rem;
-
-	}
-
-	.projects_img {
-		width: 31.5rem;
-		height: 18rem;
-
-	}
-	
-
-}
-
-@media screen and (max-width: 414px){
-	.main-header {
-		width: 100%;
-	}
-
-	.main_container{
-		flex-direction: column;
-	}
-	
-    .title_main {		
-		margin: 2.6rem 0 2rem 0;
-	}
-	
-	.about_portfolio {	
-		margin: auto;
-		margin-bottom: 1rem;
-	}
-
-    .portfolio_container{
-        text-align: center;
-		justify-content: center;
-		margin: 0;
-    }
-
-    .title_secondary{
-		margin-top: 0;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-
-	.paragraph_main{
-		width: 18.3rem;
-		text-align: justify;
-		font-size: 1rem;
-	}
-
-	
-	.projects_container {
-		height: 16rem;
-
-	}
-
-	.projects_img {
-		width: 20rem;
-		height: 13rem;
-
-	}
-
-}
 ==================================== */
-
-
-
 /* ================================= 
   Media Queries - Index
 ==================================== */
-
 @media (min-width: 769px) {
 	.main-header,
 	.main-nav,
@@ -363,41 +91,29 @@ img {
 		line-height: 4rem;	
 	}	
 }
-
 @media (max-width: 769px){
-
 	.main-header{
 		background: #004677;	
 	}
-
     .main-nav li a{
 		text-align: center;
 		display: block;
 	}
-
 	.main-header .main-nav > li a{
 		color: #fff;
-
 	}
 	.secondary{
 		max-width: 350px;
 		margin: 0 auto;
 	}
-
 	.social_media_link{
 		display: flex;
 		justify-content: center;
-
 	}
-
 	.social_media_link a{
 		margin: 5px;
-
 	}
-
 	.secondary h2{
 		margin-top: 0;
 	}
 }
-
-
