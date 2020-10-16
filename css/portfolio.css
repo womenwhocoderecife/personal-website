@@ -39,10 +39,10 @@ a {
   justify-content: flex-end;
 }
 
-.main-nav {
+/* .main-nav {
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .main-nav li {
   margin: 24px;
@@ -50,8 +50,6 @@ a {
 }
 
 /* ---- Main ---- */
-
-/* Main */
 
 .title {
   color: var(--color-blue);
@@ -132,13 +130,7 @@ a {
   Media Queries - Portfolio
 ==================================== */
 
-@media screen and (max-width: 1024px) {
-
-  .main-header {
-    margin-right: 9rem;
-
-  }
-
+@media (max-width: 1024px) {
   .title_main {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -185,10 +177,26 @@ a {
 
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
 
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 769px) {
   .main-header {
-    width: 100%;
+    background: var(--color-blue);
+  }
+
+  .main-nav li {
+    text-align: center;
+    display: block;
+  }
+
+  .main-header .main-nav>li a {
+    color: var(--color-white);
   }
 
   .main_container {
@@ -240,22 +248,14 @@ a {
 
 }
 
-@media screen and (max-width: 600px) {
-  .main-nav {
-    justify-content: center;
-  }
-
+@media (max-width: 600px) {
   .projects_img {
     width: 23.5rem;
     height: 18rem;
   }
 }
 
-@media screen and (max-width: 414px) {
-  .main-header {
-    width: 100%;
-  }
-
+@media (max-width: 414px) {
   .main_container {
     flex-direction: column;
   }
@@ -287,7 +287,6 @@ a {
     font-size: 1rem;
   }
 
-
   .projects_container {
     height: 16rem;
 
@@ -298,5 +297,4 @@ a {
     height: 13rem;
 
   }
-
 }
