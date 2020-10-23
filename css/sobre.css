@@ -1,0 +1,170 @@
+/*Configuração global*/ 
+
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Open Sans;', sans-serif;
+	color: var(--color-text);
+	background-color: var(--color-background);	
+}
+
+/*Usando CSS Variables*/ 
+
+:root{
+	--color-blue:#004677;
+	--color-text: #333333;
+	--color-white:#fff;	
+	--color-background:rgba(229, 229, 229, 0.5);
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+
+h2 {
+	color: var(	--color-blue);
+}
+
+a {
+	color: var(	--color-blue);
+	font-size: 1rem;
+	text-decoration: none;
+}
+img {
+	max-width: 100%; 
+	box-shadow: var(--color-text);
+}
+
+/* ----------- Navigation -----------*/
+
+.main-header{
+	padding: 1.875rem 1rem;
+	justify-content: flex-end;
+}
+
+.main-nav li {	
+	margin:  24px;	
+	text-transform: uppercase;
+}
+
+/********* ---- Estrutura: Linha x Coluna---- *********/
+
+/*Linha*/
+.row {
+	width:100%;	
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+/*Colunas*/
+.col{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+/******** ---- Primeira Coluna - Lado Direito ---- *********/
+.primary {    
+	order:2;
+	/* max-width: 40% */
+}
+
+/* Imagem Primeira Coluna */
+.primary .item{
+	margin: auto;	
+}
+
+/******** ---- Segunda Coluna - Lado Esquerdo ---- *********/
+ .secondary{	 
+	order: 1;
+	padding: 0 4rem 0 6rem;		
+}
+
+.secondary > h2{
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.37rem;
+	margin-bottom: 1rem;	
+}
+
+.secondary .first-heading{
+	font-size: 2.5rem;	/*O equivalente a 40px*/
+}
+.secondary .second-heading{
+	font-size: 1.56rem;	/*O equivalente a 25px*/
+}
+
+.secondary > p{
+	text-align: justify;
+	font-style: normal;
+	font-weight: normal;
+	font-size:   1rem;
+	line-height: 1.875rem;
+	font-weight: 100;
+	padding-bottom: 1.875rem;	
+	color: var(--color-text);	
+}
+
+/* ================================= 
+  Media Queries - Sobre
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;	
+	}
+	.col h2{
+		line-height: 4rem;	
+	}	
+
+	.col p{
+		max-width: 500px;
+	}
+
+}
+@media (max-width: 769px){
+	.main-header{
+		background: var(--color-blue);	
+	}
+    .main-nav li{
+		text-align: center;
+		display: block;
+	}
+	.main-header .main-nav > li a{
+		color: var(--color-white);
+	}
+	.row{
+		margin:0;
+	}
+	.primary{
+		min-height: 60vh;
+		/* max-width: 100%;		 */
+	}
+	
+	.primary .item > img{
+		padding: 0 30px;		
+		margin: 0 auto;
+	 }
+	.secondary{
+		margin:0;
+		padding: 0;
+	}
+	.secondary h2{
+		font-size:2.5rem;
+		margin: auto;
+		padding:25px;
+	}
+
+	.secondary p{
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
