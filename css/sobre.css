@@ -43,12 +43,12 @@ img {
 /* ----------- Navigation -----------*/
 
 .main-header{
-	padding: 1.875rem 1rem;
+	padding: 1.875rem 3.75rem 1.875rem;
 	justify-content: flex-end;
 }
 
 .main-nav li {	
-	margin:  24px;	
+	margin:  1.5rem;	
 	text-transform: uppercase;
 }
 
@@ -56,9 +56,11 @@ img {
 
 /*Linha*/
 .row {
-	width:100%;	
+	width: 100%;	
 	flex-wrap: wrap;
 	align-items: flex-start;
+
+	padding-top: 2.875rem;
 }
 
 /*Colunas*/
